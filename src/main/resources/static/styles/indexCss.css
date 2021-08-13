@@ -1,0 +1,121 @@
+@charset "ISO-8859-1";
+body{
+	padding:0px;
+	overflow-x:hidden;
+}
+/*Formatação do background de cima--------------------*/
+.backgroundTop{
+	display:block;
+	position:relative;
+	width:101.5%;
+	height:570px;
+	left:-0.7%;
+	top:-8px;
+	right:0%;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.dogBackgroundTop{
+	width:250px;
+	height:250px;
+	position:relative;
+	top:-395px;
+	left:90%;
+	opacity:0;
+	transition:left 1s,opacity 1.5s;
+}
+.logo{
+	width:400px;
+	height:400px;
+	position:relative;
+	top:-500px;
+	left:-50%;
+	opacity:0;
+	transition:left 1s,opacity 1.5s;
+}
+/*------------------------------------------------*/
+/*Formating of menu login--------------------------------*/
+.menuLogin{
+	position:relative;
+	width:101.5%;
+	height:50px;
+	background:linear-gradient(to left,#D2691E,#F4A460);
+	left:-0.7%;
+	top:-983px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+.menuNavigation{
+	position:relative;
+	width:60%;
+	height:50px;
+	background:linear-gradient(to left,#00FF7F,#98FB98);
+	box-shadow:0px 1px 5px #00FF7F;
+	left:-150%;
+	top:-500px;
+	border-radius:30px;
+	opacity:0;
+	transition:left 1s,opacity 1.5s;
+}
+.buttonMenuLogin{
+	position:relative;
+	display:inline-block;
+	width:100px;
+	height:40px;
+	top:10%;
+	left:82%;
+	border-radius:30px;
+	opacity:0.8;
+	transition:border 0.2s,opacity 0.5s;
+	background:linear-gradient(to left,#00FF7F,#98FB98);
+}
+.buttonMenuLogin span{
+	color:white;
+	font-weight:bold;
+	text-shadow:0px 0px 2px black;
+	font-size:13pt;
+}
+.buttonMenuLogin:hover{
+	cursor:pointer;
+	border:1px solid #FFFAFA;
+	opacity:1;
+}
+#buttonInscrever span{
+	position:relative;
+	left:25%;
+	top:20%;
+}
+#buttonlogin span{
+	position:relative;
+	left:30%;
+	top:20%;
+}
+/*-------------------------------------------------------*/
+
+/*Formating of menu Options--------------------------------*/
+.buttonMenuNavigation{
+	display:inline-block;
+	background:none;
+	position:relative;
+	height:50px;
+	width:120px;
+	transition:border 0.4s,color 0.2s;
+	border:1px solid none;
+	margin-left:2%;
+	left:10%;
+	color:#008000;
+}
+.buttonMenuNavigation:hover{
+	border-left:1px solid #32CD32;
+	border-right:1px solid #32CD32;
+	cursor:pointer;
+	color:white;
+}
+.buttonMenuNavigation span{
+	position:relative;
+	font-size:20pt;
+	font-family:arial;
+	left:10%;
+	top:14%;
+}
+/*-------------------------------------------------------*/

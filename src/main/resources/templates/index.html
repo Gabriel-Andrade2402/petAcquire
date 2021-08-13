@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="ISO-8859-1">
+	<title>Pet Acquire</title>
+	<link rel="icon" type="image/png" th:href="@{/imagens/comum/logomarca.png}">
+	<link th:href="@{/styles/indexCss.css}" rel="stylesheet"/>
+	<script type="text/javascript" th:src="@{/js/indexJs.js}"></script>
+ </head>
+ <body>
+	<header>
+		<img th:src="@{/imagens/index/backgroundTopo.png}" class="backgroundTop" id="backgroundTop"/>
+		<img th:src="@{/imagens/index/cachorroBackgroundTopo.png}" class="dogBackgroundTop" id="dogBackgroundTop"/>
+		<img th:src="@{/imagens/comum/logomarca.png}" class="logo" id="logo"/>
+		<div id="menuLogin" class="menuLogin">
+			<div id="buttonInscrever" class="buttonMenuLogin"><span>sign up</span></div>
+			<div id="buttonlogin" class="buttonMenuLogin"><span th:tex>Login</span></div>
+		</div>
+		<div id="menuNavigation" class="menuNavigation">
+			<div class="buttonMenuNavigation" id="buttonAnimals"><span>Animals</span></div>
+			<div class="buttonMenuNavigation" id="buttonProducts"><span>Products</span></div>
+			<div class="buttonMenuNavigation" id="buttonLocation"><span>Location</span></div>
+			<div class="buttonMenuNavigation" id="buttonAboutUs"><span>About us</span></div>
+		</div>
+		<script>
+			indexInitialize();
+		</script>
+	</header>
+ </body>
+</html>
