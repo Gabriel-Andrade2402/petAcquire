@@ -173,7 +173,7 @@ article{
 }
   /* Appetizer*/
 #articleAppetizer{
-	height:450px;
+	height:500px;
 }
 #blockAppetizer{
 	position:relative;
@@ -228,4 +228,40 @@ article{
 	opacity:1;
 	cursor:none;
 }
+
+  /*History*/
+#articleHistory{
+	height:400px;
+}
+  
+#imgArticleHistory{
+	position:relative;
+	top:-8%;
+	opacity:0.5;
+	transition:top 1.5s,opacity 1s;
+	left:29%;
+	width:500px;
+	height:500px;
+}
+#titleArticleHistory{
+	font-size:38pt;
+	color:#D2691E;
+	position:relative;
+	left:2%;
+	top:-45%;
+	opacity:0.5;
+	transition:top 1.5s,opacity 1s;
+}
+#contentArticleHistory{
+	position:relative;
+	font-size:25pt;
+	font-family:Times, Times New Roman, serif;
+	color:#2F4F4F;
+	top:-45%;
+	opacity:0.5;
+	transition:top 1.5s,opacity 1s;
+	left:7%;
+	line-height:80%;
+}
 /*-------------------------------------------------------*/
+

@@ -11,21 +11,16 @@ function ScrollManipulation(){
     		contentArticleMeet.style.top="-100px";
     		contentArticleMeet.style.opacity="1";
     	}
-    	if(window.scrollY>800){
-    	
+    	if(window.scrollY>1200){
+    		let imgArticleHistory=document.getElementById('imgArticleHistory');
+    		let titleArticleHistory=document.getElementById('titleArticleHistory');
+    		let contentArticleHistory=document.getElementById('contentArticleHistory');
+    		imgArticleHistory.style.top="2%";
+    		imgArticleHistory.style.opacity="1";
+    		titleArticleHistory.style.top="-25%";
+    		titleArticleHistory.style.opacity="1";
+    		contentArticleHistory.style.top="-25%";
+    		contentArticleHistory.style.opacity="1";
     	}
-    	if(window.scrollY>1400){
-    		
-    	}
-    	if(window.scrollY>2100){
-    		
-    	}
-    	if(window.scrollY>2800){
-    		
-    	}
-    	if(window.scrollY<100){
-    	
-    	}
-
 	});
 }
