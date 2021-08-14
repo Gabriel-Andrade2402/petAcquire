@@ -4,6 +4,9 @@ body{
 	overflow-x:hidden;
 }
 /*Formatação do background de cima--------------------*/
+header{
+	height:1070px;
+}
 .backgroundTop{
 	display:block;
 	position:relative;
@@ -92,7 +95,7 @@ body{
 }
 /*-------------------------------------------------------*/
 
-/*Formating of menu Options--------------------------------*/
+/*Formating the menu Options--------------------------------*/
 .buttonMenuNavigation{
 	display:inline-block;
 	background:none;
@@ -117,5 +120,112 @@ body{
 	font-family:arial;
 	left:10%;
 	top:14%;
+}
+/*-------------------------------------------------------*/
+/*Formating the section and articles --------------------*/
+
+
+/*Zerando valors de article*/
+section{
+	z-index:-10;
+	position:relative;
+	top:-500px;
+	height:0px;
+}
+article{
+	height:0px;
+}
+/*MEET*/
+#articleMeet{
+	height:400px;
+}
+#imgArticleMeet{
+	width:400px;
+	height:400px;
+	position:relative;
+	display:inline-block;
+	top:-20px;
+	opacity:0.6;
+	transition:opacity 1s,top 1s;
+}
+#titleArticleMeet{
+	display:inline-block;
+	font-size:30pt;
+	position:relative;
+	width:100px;
+	height:50px;
+	color:#D2691E;
+	top:-340px;
+	left:30%;
+	font-family:FreeMono, monospace;
+	transition:opacity 1s,top 1s;
+}
+#contentArticleMeet{
+	display:inline-block;
+	font-size:15pt;
+	position:relative;
+	width:700px;
+	height:500px;
+	color:#2F4F4F;
+	top:-120px;
+	font-family:Comic Sans MS, Comic Sans, cursive;
+	transition:opacity 1s,top 1s;
+}
+  /* Appetizer*/
+#articleAppetizer{
+	height:450px;
+}
+#blockAppetizer{
+	position:relative;
+	top:25%;
+	left:0%;
+  	width:90%;
+  	height:430px;
+  	opacity:1; 
+}
+.imgBlockAppetizer{
+	width:350px;
+	height:430px;
+	opacity:0.5;
+	border-radius:30px;
+	transition:opacity 1s;
+}
+.blockInternAppetizer{
+	position:relative;
+	left:8%;
+	display:inline-block;
+	background:black;
+	width:350px;
+	height:430px;
+	border-radius:30px;
+}
+.imgBlockAppetizer:hover{
+	opacity:1;
+	cursor:pointer;
+}
+.titleImgAppetizer{
+	position:relative;
+	top:-90%;
+	font-size:20pt;
+	left:40%;
+	width:auto;
+	height:auto;
+	color:white;
+	font-family:FreeMono, monospace;
+}
+.contentImgAppetizer{
+	position:relative;
+	top:-70%;
+	font-size:14pt;
+	line-height:30px;	
+	left:2%;
+	transition:opacity 0.5s;
+	opacity:0.7;
+	color:white;
+	font-family:arial;
+}
+.contentImgAppetizer:hover{
+	opacity:1;
+	cursor:none;
 }
 /*-------------------------------------------------------*/

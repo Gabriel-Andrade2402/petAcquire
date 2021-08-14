@@ -6,6 +6,7 @@
 	<link rel="icon" type="image/png" th:href="@{/imagens/comum/logomarca.png}">
 	<link th:href="@{/styles/indexCss.css}" rel="stylesheet"/>
 	<script type="text/javascript" th:src="@{/js/indexJs.js}"></script>
+	<script type="text/javascript" th:src="@{/js/scrolling.js}"></script>
  </head>
  <body>
 	<header>
@@ -24,7 +25,47 @@
 		</div>
 		<script>
 			indexInitialize();
+			ScrollManipulation();
 		</script>
 	</header>
+	<section>
+		<article id="articleMeet">
+			<img th:src="@{/imagens/index/imagemDuplaIndex.png}" id="imgArticleMeet"/>
+			<span id="titleArticleMeet" class="titleArticle">Meet</span>
+			<span id="contentArticleMeet" class="contentArticle">We are a company dedicated to animals,
+			working with products for them and also with adoptions and purchases.Everything you need for
+			your pet, whether wild or domestic, we have it here, we also work with orders if you can't 
+			find your order anywhere. We often adopt animals from the streets, those that the government
+			cannot handle or also those rescued by third parties where they are available for adoption 
+			with a product bonus. We work with sales of several species such as armadillo, macaws, monk
+			eys, insects among others that you can check in the catalog.</span>
+		</article>
+		<article id="articleAppetizer">
+			<div id="blockAppetizer">
+				<div id="blockAppetizerNews" class="blockInternAppetizer">
+					<img th:src="@{/imagens/index/imagemCachorroNovoIndex.png}" id="imgBlockAppetizerNews" class="imgBlockAppetizer"/>
+					<span class="titleImgAppetizer">News</span>
+					<span class="contentImgAppetizer"><br/>The new animals are a lot of fun, in certain species they have a lot of energy and
+					infect the whole house, they are also great companions for children. If your goal is to
+					follow all the steps of the animal and all its structural evolution.</span>
+				</div>
+				<div id="blockAppetizerSpecial" class="blockInternAppetizer">
+					<img th:src="@{/imagens/index/imagemCachorroEspecialIndex.png}" id="imgBlockAppetizerSpecial" class="imgBlockAppetizer"/>
+					<span class="titleImgAppetizer">Special</span>
+					<span class="contentImgAppetizer"><br/>Special animals have some difficulties and that's why you can and should be essential
+					in their lives, many of them are more loving than most of the population because they have empathy and know what it is to suffer.</span>
+				</div>
+				<div id="blockAppetizerOld" class="blockInternAppetizer">
+					<img th:src="@{/imagens/index/imagemCachorroAntigoIndex.png}" id="imgBlockAppetizerOld" class="imgBlockAppetizer"/>
+					<span class="titleImgAppetizer">Old</span>
+					<span class="contentImgAppetizer"><br/>The older animals are much calmer, not only because of their age but also because of their
+					life experience, in great majority they also act like monks, they are intelligent, they know what they can and cannot do.</span>
+				</div>
+			</div>
+		</article>
+		<article id="articleHistory">
+			<img th:src="@{/imagens/index/imagemHistoriaIndex.png}" id="imgArticleHistory"/>
+		</article>
+	</section>
  </body>
 </html>
