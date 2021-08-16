@@ -1,31 +1,227 @@
 <!DOCTYPE html>
 <html>
  <head>
-	<meta charset="ISO-8859-1">
+	<meta charset="ISO-8859-1"/>
 	<title>Pet Acquire</title>
 	<link rel="icon" type="image/png" th:href="@{/imagens/comum/logomarca.png}">
 	<link th:href="@{/styles/indexCss.css}" rel="stylesheet"/>
 	<script type="text/javascript" th:src="@{/js/indexJs.js}"></script>
 	<script type="text/javascript" th:src="@{/js/scrolling.js}"></script>
+	<script type="text/javascript" th:src="@{/js/menuNavigationJs.js}"></script>
  </head>
  <body>
 	<header>
 		<img th:src="@{/imagens/index/backgroundTopo.png}" class="backgroundTop" id="backgroundTop"/>
 		<img th:src="@{/imagens/index/cachorroBackgroundTopo.png}" class="dogBackgroundTop" id="dogBackgroundTop"/>
-		<img th:src="@{/imagens/comum/logomarca.png}" class="logo" id="logo"/>
+		<img th:src="@{/imagens/comum/logomarca2.png}" class="logo" id="logo"/>
 		<div id="menuLogin" class="menuLogin">
 			<div id="buttonInscrever" class="buttonMenuLogin"><span>sign up</span></div>
 			<div id="buttonlogin" class="buttonMenuLogin"><span th:tex>Login</span></div>
 		</div>
 		<div id="menuNavigation" class="menuNavigation">
-			<div class="buttonMenuNavigation" id="buttonAnimals"><span>Animals</span></div>
-			<div class="buttonMenuNavigation" id="buttonProducts"><span>Products</span></div>
-			<div class="buttonMenuNavigation" id="buttonLocation"><span>Location</span></div>
-			<div class="buttonMenuNavigation" id="buttonAboutUs"><span>About us</span></div>
+			<div class="buttonMenuNavigation" id="buttonAnimals">
+				<span class="textNavigationMain">Animals</span>
+				<div id="blockNavigationAnimals">
+					<!-- Column1 -->
+					<div class="objectTitleNavigationColumn1">
+						<span class="textObjectTitleNavigationColumn1">Domestic</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Dogs</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Cats</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Horses</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Chicken</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Duck</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Rabbit</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Hamster</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Birds</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Goat</span>
+					</div>
+					<!-- Column2 -->
+					<div class="objectTitleNavigationColumn2">
+						<span class="textObjectTitleNavigationColumn2">Wild</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Rhinoceros</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Alligator</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Anaconda</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Orca</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Elephant</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Ounce</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Shark</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Capybara</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Bear</span>
+					</div>
+					<!-- Column3 -->
+					<div class="objectTitleNavigationColumn3">
+						<span class="textObjectTitleNavigationColumn3">Insects</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Bee</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Anopheles</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Cockroach</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Beetles</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Silkworm</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Cochonilha</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Termite</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Entomology</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Flies</span>
+					</div>
+				</div>
+			</div>
+			<div class="buttonMenuNavigation" id="buttonProducts">
+				<span class="textNavigationMain">Products</span>
+				<div id="blockNavigationProducts">
+					<!-- Column1 -->
+					<div class="objectTitleNavigationColumn1">
+						<span class="textObjectTitleNavigationColumn1" style="color:#00BFFF">cleaning</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Shampoo</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Soap</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Cream</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Perfume</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Collector</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Mat</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1">Brush</span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1"></span>
+					</div>
+					<div class="objectNavigationColumn1">
+						<span class="textObjectNavigationColumn1"></span>
+					</div>
+					<!-- Column2 -->
+					<div class="objectTitleNavigationColumn2">
+						<span class="textObjectTitleNavigationColumn2" style="color:#1C1C1C;">Structure</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Home</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Aquarium</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Cage</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Accessories</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">Gate</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2">toys</span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2"></span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2"></span>
+					</div>
+					<div class="objectNavigationColumn2">
+						<span class="textObjectNavigationColumn2"></span>
+					</div>
+					<!-- Column3 -->
+					<div class="objectTitleNavigationColumn3">
+						<span class="textObjectTitleNavigationColumn3" style="color:#B22222;">food</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Ration</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Snacks</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">special rations</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">bones</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Insects</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3">Animals</span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3"></span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3"></span>
+					</div>
+					<div class="objectNavigationColumn3">
+						<span class="textObjectNavigationColumn3"></span>
+					</div>
+				</div>
+			</div>
+			<div class="buttonMenuNavigation" id="buttonLocation"><span class="textNavigationMain">Location</span></div>
+			<div class="buttonMenuNavigation" id="buttonAboutUs"><span class="textNavigationMain">About us</span></div>
 		</div>
 		<script>
 			indexInitialize();
 			ScrollManipulation();
+			menuNavigationInitialize();
 		</script>
 	</header>
 	<section>
@@ -72,6 +268,22 @@
 			matter how big you are yes, if your heart is small your size is worthless.That <br/>
 			dog with marked paws not only became our logo but also started a great search <br/>
 			for stray animals,looking for homes for them where they receive love and affection.</span>
+		</article>
+		<article id="articleCommerce">
+			<div id="blockCommerce">
+				<div id="blockCommerceAlimentation" class="blockInternCommerce">
+					<img th:src="@{/imagens/index/iconeAlimentacao2.png}" id="imgBlockCommerceAlimentation" class="imgBlockCommerce"/>
+					<span class="titleImgCommerce">Alimentation</span>
+				</div>
+				<div id="blockCommerceEssential" class="blockInternCommerce">
+					<img th:src="@{/imagens/index/iconeEssenciais2.png}" id="imgBlockCommerceEssential" class="imgBlockCommerce"/>
+					<span class="titleImgCommerce">Essentials</span>
+				</div>
+				<div id="blockCommerceProducts" class="blockInternCommerce">
+					<img th:src="@{/imagens/index/iconeProdutos2.png}" id="imgBlockCommerceProducts" class="imgBlockCommerce"/>
+					<span class="titleImgCommerce">Products</span>	
+				</div>
+			</div>
 		</article>
 	</section>
  </body>

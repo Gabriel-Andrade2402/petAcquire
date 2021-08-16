@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="ISO-8859-1">
+	<title>login pet</title>
+	<link rel="icon" type="image/png" th:href="@{/imagens/comum/logomarca.png}">
+	<link th:href="@{/styles/loginCss.css}" rel="stylesheet"/>
+	<script type="text/javascript" th:src="@{/js/loginJs.js}"></script>
+ </head>
+ <body>
+	<div id="blockLogin">
+		<img th:src="@{/imagens/comum/logomarca2.png}" id="logomarca"/>
+		<span id="tituloBlock">Login</span><br/>
+		<span class="titleInput">Username / E-mail</span><br/>
+  		<input type="text" id="inputLogin" class="input"><br/><br/>
+  		<span class="titleInput">Password</span><br/>
+  		<input type="password" id="inputPassword" class="input"><br/>
+  		<div id="buttonSignUp"><span id="textSignUp">Sign Up</span></div>
+  		<div id="buttonConfirm"><span id="textConfirm">Login</span></div>
+	</div>
+ </body>
+</html>

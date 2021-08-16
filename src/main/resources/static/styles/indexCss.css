@@ -95,7 +95,7 @@ header{
 }
 /*-------------------------------------------------------*/
 
-/*Formating the menu Options--------------------------------*/
+/*Formating the menu navigation--------------------------------*/
 .buttonMenuNavigation{
 	display:inline-block;
 	background:none;
@@ -114,12 +114,151 @@ header{
 	cursor:pointer;
 	color:white;
 }
-.buttonMenuNavigation span{
+.textNavigationMain{
 	position:relative;
 	font-size:20pt;
 	font-family:arial;
 	left:10%;
 	top:14%;
+}
+#blockNavigationAnimals{
+	position:relative;
+	top:34%;
+	background:linear-gradient(to left,#00FF7F,#98FB98);
+	width:450%;
+	height:300px;
+	display:none;
+	opacity:0;
+	transition:top 0.6s,opacity 0.6s;
+}
+#blockNavigationAnimals:hover{
+	cursor:default;
+}
+#blockNavigationProducts{
+	position:relative;
+	top:34%;
+	left:-117%;
+	background:linear-gradient(to left,#00FF7F,#98FB98);
+	width:450%;
+	height:300px;
+	display:none;
+	opacity:0;
+	transition:top 0.6s,opacity 0.6s;
+}
+#blockNavigationProducts:hover{
+	cursor:default;
+}
+
+	/* COLUNM 1*/
+.objectNavigationColumn1{
+	position:relative;
+	height:30px;
+	border-right:1px solid #B0C4DE;
+	width:22.3%;
+	transition:background 0.5s;
+}
+.objectTitleNavigationColumn1{
+	position:relative;
+	height:30px;
+	width:22.3%;
+}
+.textObjectTitleNavigationColumn1{
+	position:relative;
+	display:table-row;
+	color: #D2691E ;
+	left:20%;
+	font-size:13pt;
+	font-family:verdana;
+}
+.textObjectNavigationColumn1{
+	position:relative;
+	display:table-row;
+	color: #2F4F4F ;
+	left:10%;
+	font-size:17pt;
+	font-family:agency fb;
+}
+.objectNavigationColumn1:hover{
+	background:#FFFAFA;
+	cursor:pointer;
+}
+	/* COLUNM 2*/
+.objectNavigationColumn2{
+	position:relative;
+	height:30px;
+	border-right:1px solid #B0C4DE;
+	width:22.3%;
+	left:22.3%;
+	top:-100%;
+	transition:background 0.5s;
+}
+.objectTitleNavigationColumn2{
+	position:relative;
+	height:30px;
+	width:22.3%;
+	left:22.3%;
+	top:-100%;
+}
+.textObjectTitleNavigationColumn2{
+	position:relative;
+	display:table-row;
+	color: #D2691E ;
+	left:20%;
+	font-size:13pt;
+	font-family:verdana;
+}
+.textObjectNavigationColumn2{
+	position:relative;
+	display:table-row;
+	color: #2F4F4F ;
+	left:10%;
+	font-size:17pt;
+	font-family:agency fb;
+}
+.objectNavigationColumn2.objectNavigationColumn1:hover{
+	background:#FFFAFA;
+	cursor:pointer;
+}
+.objectNavigationColumn2:hover{
+	background:#FFFAFA;
+	cursor:pointer;
+}
+/* COLUNM 3*/
+.objectNavigationColumn3{
+	position:relative;
+	height:30px;
+	border-right:1px solid #B0C4DE;
+	width:22.3%;
+	left:44.6%;
+	top:-200%;
+	transition:background 0.5s;
+}
+.objectTitleNavigationColumn3{
+	position:relative;
+	height:30px;
+	width:22.3%;
+	left:44.6%;
+	top:-200%;
+}
+.textObjectTitleNavigationColumn3{
+	position:relative;
+	display:table-row;
+	color: #D2691E ;
+	left:20%;
+	font-size:13pt;
+	font-family:verdana;
+}
+.textObjectNavigationColumn3{
+	position:relative;
+	display:table-row;
+	color: #2F4F4F ;
+	left:10%;
+	font-size:17pt;
+	font-family:agency fb;
+}
+.objectNavigationColumn3:hover{
+	background:#FFFAFA;
+	cursor:pointer;
 }
 /*-------------------------------------------------------*/
 /*Formating the section and articles --------------------*/
@@ -230,8 +369,9 @@ article{
 }
 
   /*History*/
+
 #articleHistory{
-	height:400px;
+	height:500px;
 }
   
 #imgArticleHistory{
@@ -247,8 +387,8 @@ article{
 	font-size:38pt;
 	color:#D2691E;
 	position:relative;
-	left:2%;
-	top:-45%;
+	left:4%;
+	top:-40%;
 	opacity:0.5;
 	transition:top 1.5s,opacity 1s;
 }
@@ -257,11 +397,54 @@ article{
 	font-size:25pt;
 	font-family:Times, Times New Roman, serif;
 	color:#2F4F4F;
-	top:-45%;
+	top:-40%;
 	opacity:0.5;
 	transition:top 1.5s,opacity 1s;
 	left:7%;
 	line-height:80%;
+}
+  /*Commerce*/
+#articleCommerce{
+	height:500px;
+}
+#blockCommerce{
+	position:relative;
+	top:40%;
+	left:0%;
+  	width:90%;
+  	height:430px;
+  	opacity:1; 
+}
+.imgBlockCommerce{
+	width:350px;
+	height:350px;
+	opacity:0.3;
+	border-radius:10px;
+	transition:opacity 1s;
+}
+.blockInternCommerce{
+	position:relative;
+	left:8%;
+	display:inline-block;
+	background:black;
+	width:350px;
+	height:350px;
+	border-radius:10px;
+}
+.imgBlockCommerce:hover{
+	opacity:0.8;
+	cursor:pointer;
+}
+.titleImgCommerce{
+	position:relative;
+	top:-55%;
+	font-size:36pt;
+	text-shadow:0px 0px 5px black;
+	left:5%;
+	width:auto;
+	height:auto;
+	color:white;
+	font-family:FreeMono, monospace;
 }
 /*-------------------------------------------------------*/
 

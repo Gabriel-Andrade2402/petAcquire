@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 @RestController
-public class indexResources {
+public class loginResources {
 
-	@GetMapping(value="/index")
-	public ModelAndView index(){
-		   return new ModelAndView("index");
+	@GetMapping(value="/login")
+	public ModelAndView login(){
+		   return new ModelAndView("login");
 	}
 }

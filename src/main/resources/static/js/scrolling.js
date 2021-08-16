@@ -15,7 +15,7 @@ function ScrollManipulation(){
     		let imgArticleHistory=document.getElementById('imgArticleHistory');
     		let titleArticleHistory=document.getElementById('titleArticleHistory');
     		let contentArticleHistory=document.getElementById('contentArticleHistory');
-    		imgArticleHistory.style.top="2%";
+    		imgArticleHistory.style.top="1%";
     		imgArticleHistory.style.opacity="1";
     		titleArticleHistory.style.top="-25%";
     		titleArticleHistory.style.opacity="1";
