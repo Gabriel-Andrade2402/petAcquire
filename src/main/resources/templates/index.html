@@ -5,6 +5,7 @@
 	<title>Pet Acquire</title>
 	<link rel="icon" type="image/png" th:href="@{/imagens/comum/logomarca.png}">
 	<link th:href="@{/styles/indexCss.css}" rel="stylesheet"/>
+	<script type="text/javascript" th:src="@{/js/redirect.js}"></script>
 	<script type="text/javascript" th:src="@{/js/indexJs.js}"></script>
 	<script type="text/javascript" th:src="@{/js/scrolling.js}"></script>
 	<script type="text/javascript" th:src="@{/js/menuNavigationJs.js}"></script>
@@ -15,8 +16,8 @@
 		<img th:src="@{/imagens/index/cachorroBackgroundTopo.png}" class="dogBackgroundTop" id="dogBackgroundTop"/>
 		<img th:src="@{/imagens/comum/logomarca2.png}" class="logo" id="logo"/>
 		<div id="menuLogin" class="menuLogin">
-			<div id="buttonInscrever" class="buttonMenuLogin"><span>sign up</span></div>
-			<div id="buttonlogin" class="buttonMenuLogin"><span th:tex>Login</span></div>
+			<div id="buttonSignUp" class="buttonMenuLogin" onclick="redirect('http://localhost:8080/signUp')"><span>sign up</span></div>
+			<div id="buttonlogin" class="buttonMenuLogin" onclick="redirect('http://localhost:8080/login')"><span th:tex>Login</span></div>
 		</div>
 		<div id="menuNavigation" class="menuNavigation">
 			<div class="buttonMenuNavigation" id="buttonAnimals">

@@ -83,7 +83,7 @@ header{
 	border:1px solid #FFFAFA;
 	opacity:1;
 }
-#buttonInscrever span{
+#buttonSignUp span{
 	position:relative;
 	left:25%;
 	top:20%;
@@ -447,4 +447,65 @@ article{
 	font-family:FreeMono, monospace;
 }
 /*-------------------------------------------------------*/
-
+/*Classes utilizadas no javascript*/
+.iconeMenu{
+	position:relative;
+	width:4%;
+	height:100%;
+	left:2%;
+	opacity:0.6;
+	transition:opacity 0.5s;
+}
+.iconeMenu:hover{
+	opacity:1;
+	cursor:pointer;
+}
+.boxBackground{
+	background:black;
+	width:100%;
+	height:100%;
+	position:fixed;
+	opacity:0.2;
+	top:0px;
+	left:25%;
+	bottom:0px;
+	right:0px;
+}
+.menuNavigatorLeft{
+	background:#F4A460;
+	width:25%;
+	height:92.5%;
+	position:fixed;
+	top:7.5%;
+	left:0%;
+	bottom:0px;
+	right:0px;
+}
+.textHello{
+	position:relative;
+	left:3%;
+	top:10%;
+	color:#2F4F4F;
+	font-size:15pt;
+	font-family:verdana;
+}
+.elementsMenuNavigatorLeft{
+	position:relative;
+	width:100%;
+	height:8%;
+	top:20%;
+	background:#FFFAFA;
+	transition:background 0.5s;
+	margin-top:0.5%;
+}
+.textElementsMenuLeft{
+	display:inline-block;
+	position:relative;
+	left:25%;
+	top:13%;
+	color:#363636;
+	font-size:23pt;
+	font-family:agency fb;
+	transition:color 0.2s;
+}
+/*-------------------------------------------------------*/

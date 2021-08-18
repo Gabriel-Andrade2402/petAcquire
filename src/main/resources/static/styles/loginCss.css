@@ -12,13 +12,15 @@ body{
 #blockLogin{
 	position:relative;
 	left:35%;
-	top:12%;
+	top:0%;
+	opacity:0;
+	transition:opacity 1s,top 1s;
 	height:70%;
 	box-shadow:0px 0px 3px black;
 	width:30%;
 	border:1px solid #FFFAFA;
 	border-radius:10%;
-	background:linear-gradient(to left bottom,#F8F8FF,#90EE90);
+	background:linear-gradient(to left bottom,#F8F8FF,#FFFAFA);
 }
 #logomarca{
 	position:relative;
@@ -38,8 +40,8 @@ body{
 }
 .titleInput{
 	position:relative;
-	color:#E0FFFF;
-	text-shadow:0px 0px 2px black;
+	color:#1C1C1C;
+	text-shadow:0px 0px 1px black;
 	left:5%;
 	top:5%;
 	font-family:Agency FB;
@@ -52,16 +54,20 @@ body{
 	width:80%;
 	height:8%;
 	font-size:12pt;
-	background:linear-gradient(to left bottom,#F8F8FF,#90EE90);
-	border:2px solid #FFFAFA;
-	border-radius:10px;
+	background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+	border:2px solid #1C1C1C;
+	border-radius:5px;
 	padding-left:5%;
+	transition:border 0.5s;
 }
 .input:focus {
   outline:none;
-  border:2px solid #00FF7F;
-  border-radius:30px;
-  background:linear-gradient(to left bottom,#F8F8FF,#90EE90);
+  border-bottom:2px solid #00FF7F;
+  border-left:2px solid #00FF7F;
+  border-right:2px solid #00FF7F;
+  border-top:2px solid #FFFAFA;
+  border-radius:5px;
+  background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
 }
 #buttonSignUp{
 	position:relative;
