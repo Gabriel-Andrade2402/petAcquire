@@ -42,10 +42,10 @@ function registerFunction(){
      	}
 	});
 	setTimeout(function (){
-		if(dataUser!=null && dataUser['name']!=""){
-			window.sessionStorage.setItem('userData',dataUser);
+		if(dataUser['name']!=""){
+			console.log('entrou');
 			window.sessionStorage.setItem('userName',dataUser['name']);
 			redirect('http://localhost:8080/');
 		}
-	},500);	
+	},200);	
 }

@@ -11,4 +11,6 @@ import com.portifolio.petAcquire.entitys.Client;
 public interface ClientRepository extends JpaRepository<Client, Long>{
 	@Query(value = "SELECT * FROM Client WHERE email = :email", nativeQuery=true)
 	Client findByEmail(@Param("email") String email);
+	@Query(value = "SELECT * FROM Client WHERE email = :email AND password = :password", nativeQuery=true)
+	Client login(@Param("email") String email, @Param("password") String password);
 }

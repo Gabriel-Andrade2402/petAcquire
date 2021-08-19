@@ -1,6 +1,7 @@
 package com.portifolio.petAcquire.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.portifolio.petAcquire.entitys.Client;
@@ -29,5 +30,8 @@ public class ClientService {
 	}
 	public void setRepository(ClientRepository repositoryClient) {
 		clientRepository=repositoryClient;
+	}
+	public Client login(Client client) {
+		return clientRepository.login(client.getEmail(),client.getPassword());
 	}
 }

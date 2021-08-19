@@ -1,5 +1,4 @@
 function indexInitialize() {
-	//window.sessionStorage.removeItem('userData');
     let logo=document.getElementById("logo");
     let menuNavigation=document.getElementById("menuNavigation");
     let dog=document.getElementById("dogBackgroundTop");
@@ -11,7 +10,7 @@ function indexInitialize() {
     	menuNavigation.style.opacity="1";
     	dog.style.opacity="1";
     },100);
-    if(window.sessionStorage.getItem('userData')!=null){
+    if(window.sessionStorage.getItem('userName')!=null){
     	userInitialize()
     }
 }
@@ -32,7 +31,18 @@ function userInitialize(){
 		onclickButtonMenu();
 	};
 }
-
+function userLogout(){
+	let menu=document.getElementById('menuLogin');
+	let buttonLogin=document.getElementById('buttonlogin');
+	let buttonSignUp=document.getElementById('buttonSignUp');
+	let buttonMenu=document.getElementById('buttonMenu');
+	//Remove buttons for login and sign Up
+	buttonLogin.style.display="inline-block";
+	buttonSignUp.style.display="inline-block";
+	menu.removeChild(buttonMenu);
+	window.sessionStorage.removeItem('userName');
+	closeMenuUser();
+}
 function onclickButtonMenu(){
 	let body=document.body;
 	body.style.overflowY="hidden"
@@ -68,6 +78,10 @@ function onclickButtonMenu(){
 		buttonProfile.onmouseleave=function(){helperLeave(buttonProfile,spanProfile)};
 		spanProfile.onmouseover=function(){helperOver(buttonProfile,spanProfile)};
 		spanProfile.onmouseleave=function(){helperLeave(buttonProfile,spanProfile)};
+		let iconProfile=document.createElement('img');
+		iconProfile.setAttribute('src','/imagens/comum/iconePerson.png');
+		iconProfile.classList.add('iconElementMenuLeft');
+		buttonProfile.appendChild(iconProfile);
 		buttonProfile.appendChild(spanProfile);
 		//end
 		//button Setting
@@ -79,6 +93,10 @@ function onclickButtonMenu(){
 		buttonSetting.onmouseleave=function(){helperLeave(buttonSetting,spanSetting)};
 		spanSetting.onmouseover=function(){helperOver(buttonSetting,spanSetting)};
 		spanSetting.onmouseleave=function(){helperLeave(buttonSetting,spanSetting)};
+		let iconSetting=document.createElement('img');
+		iconSetting.setAttribute('src','/imagens/comum/iconeSettings.png');
+		iconSetting.classList.add('iconElementMenuLeft');
+		buttonSetting.appendChild(iconSetting);
 		buttonSetting.appendChild(spanSetting);
 		//end
 		//button Requests
@@ -90,6 +108,10 @@ function onclickButtonMenu(){
 		buttonRequests.onmouseleave=function(){helperLeave(buttonRequests,spanRequests)};
 		spanRequests.onmouseover=function(){helperOver(buttonRequests,spanRequests)};
 		spanRequests.onmouseleave=function(){helperLeave(buttonRequests,spanRequests)};
+		let iconRequests=document.createElement('img');
+		iconRequests.setAttribute('src','/imagens/comum/iconeRequests.png');
+		iconRequests.classList.add('iconElementMenuLeft');
+		buttonRequests.appendChild(iconRequests);
 		buttonRequests.appendChild(spanRequests);
 		//end
 		//button Historic
@@ -101,6 +123,10 @@ function onclickButtonMenu(){
 		buttonHistoric.onmouseleave=function(){helperLeave(buttonRequests,spanRequests)};
 		spanHistoric.onmouseover=function(){helperOver(buttonRequests,spanRequests)};
 		spanHistoric.onmouseleave=function(){helperLeave(buttonRequests,spanRequests)};
+		let iconHistoric=document.createElement('img');
+		iconHistoric.setAttribute('src','/imagens/comum/iconeHistoric.png');
+		iconHistoric.classList.add('iconElementMenuLeft');
+		buttonHistoric.appendChild(iconHistoric);
 		buttonHistoric.appendChild(spanHistoric);
 		//end
 		//button Favorite
@@ -112,6 +138,10 @@ function onclickButtonMenu(){
 		buttonFavorite.onmouseleave=function(){helperLeave(buttonFavorite,spanFavorite)};
 		spanFavorite.onmouseover=function(){helperOver(buttonFavorite,spanFavorite)};
 		spanFavorite.onmouseleave=function(){helperLeave(buttonFavorite,spanFavorite)};
+		let iconFavorite=document.createElement('img');
+		iconFavorite.setAttribute('src','/imagens/comum/iconeFavorite.png');
+		iconFavorite.classList.add('iconElementMenuLeft');
+		buttonFavorite.appendChild(iconFavorite);
 		buttonFavorite.appendChild(spanFavorite);
 		//end
 		//button Donation
@@ -123,6 +153,10 @@ function onclickButtonMenu(){
 		buttonDonation.onmouseleave=function(){helperLeave(buttonDonation,spanDonation)};
 		spanDonation.onmouseover=function(){helperOver(buttonDonation,spanDonation)};
 		spanDonation.onmouseleave=function(){helperLeave(buttonDonation,spanDonation)};
+		let iconDonation=document.createElement('img');
+		iconDonation.setAttribute('src','/imagens/comum/iconeDonation.png');
+		iconDonation.classList.add('iconElementMenuLeft');
+		buttonDonation.appendChild(iconDonation);
 		buttonDonation.appendChild(spanDonation);
 		//end
 		//button Exit
@@ -134,7 +168,12 @@ function onclickButtonMenu(){
 		buttonExit.onmouseleave=function(){helperLeave(buttonExit,spanExit)};
 		spanExit.onmouseover=function(){helperOver(buttonExit,spanExit)};
 		spanExit.onmouseleave=function(){helperLeave(buttonExit,spanExit)};
+		let iconExit=document.createElement('img');
+		iconExit.setAttribute('src','/imagens/comum/iconeExit.png');
+		iconExit.classList.add('iconElementMenuLeft');
+		buttonExit.appendChild(iconExit);
 		buttonExit.appendChild(spanExit);
+		buttonExit.onclick=function(){userLogout()};
 		//end
 		//end --------------------------------------------
 		//Add elements in menuNavigator
