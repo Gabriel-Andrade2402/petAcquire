@@ -5,10 +5,15 @@ function indexInitialize() {
     setTimeout(function(){
     	if(window.innerWidth>1049){
     		initializeForCpu(logo,menuNavigation,dog);
-    	}
-    	if(window.innerWidth<768 && window.innerWidth>319){
-    		initializeForMobile(logo,menuNavigation,dog);
-    	}
+    	}else{
+	    	if(window.innerWidth<768 && window.innerWidth>319){
+	    		initializeForMobile(logo,menuNavigation,dog);
+	    	}else{
+	    		if(window.innerWidth>767 && window.innerWidth<1050){
+		    		initializeForIpads(logo,menuNavigation,dog);
+		    	}
+	    	}
+	    }
     },100);
     if(window.sessionStorage.getItem('userName')!=null){
     	userInitialize()
@@ -46,6 +51,28 @@ function initializeForCpu(logo,menuNavigation,dog){
 	menuNavigation.style.opacity="1";
 	dog.style.opacity="1";
 }
+function initializeForIpads(logo,menuNavigation,dog){
+	//Condicional para landscape
+	if(window.innerWidth>959){
+		logo.style.left="20%";
+		menuNavigation.style.left="0%";
+		dog.style.left="78%";
+		logo.style.opacity="1";
+		menuNavigation.style.opacity="1";
+		dog.style.opacity="1";
+	}
+	// portrait
+	if(window.innerWidth<959){
+		logo.style.left="-10%";
+		menuNavigation.style.left="0%";
+		dog.style.left="70%";
+		logo.style.opacity="1";
+		menuNavigation.style.opacity="1";
+		dog.style.opacity="1";
+	}
+}
+
+
 function userInitialize(){
 	let menu=document.getElementById('menuLogin');
 	let buttonLogin=document.getElementById('buttonlogin');

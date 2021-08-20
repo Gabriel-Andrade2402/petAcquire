@@ -10,6 +10,9 @@ function ScrollManipulation(){
 	    	if(window.innerWidth<768 && window.innerWidth>319){
 	    		scrollForMobile200(imgArticleMeet,titleArticleMeet,contentArticleMeet);
 	    	}
+	    	if(window.innerWidth<1050 && window.innerWidth>767){
+	    		scrollForIpad200(imgArticleMeet,titleArticleMeet,contentArticleMeet);
+	    	}
     	}
     	if(window.scrollY>1200){
     		let imgArticleMeet=document.getElementById('imgArticleMeet');
@@ -20,6 +23,9 @@ function ScrollManipulation(){
 	    	}
 	    	if(window.innerWidth<768 && window.innerWidth>319){
 	    		scrollForMobile1200(imgArticleMeet,titleArticleMeet,contentArticleMeet);
+	    	}
+	    	if(window.innerWidth<1050 && window.innerWidth>767){
+	    		scrollForIpad1200(imgArticleMeet,titleArticleMeet,contentArticleMeet);
 	    	}
     	}
 	});
@@ -77,4 +83,41 @@ function scrollForCpu1200(){
 	titleArticleHistory.style.opacity="1";
 	contentArticleHistory.style.top="-25%";
 	contentArticleHistory.style.opacity="1";
+}
+
+function scrollForIpad200(imgArticleMeet,titleArticleMeet,contentArticleMeet){
+	if(window.innerWidth>959){
+		imgArticleMeet.style.top="0px";
+		imgArticleMeet.style.opacity="1";
+		titleArticleMeet.style.top="-310px";
+		titleArticleMeet.style.opacity="1";
+		contentArticleMeet.style.top="-50px";
+		contentArticleMeet.style.opacity="1";
+	}
+	if(window.innerWidth<959){
+		imgArticleMeet.style.top="0px";
+		imgArticleMeet.style.opacity="1";
+		titleArticleMeet.style.top="-50px";
+		titleArticleMeet.style.opacity="1";
+		contentArticleMeet.style.top="-65px";
+		contentArticleMeet.style.opacity="1";
+	}
+}
+function scrollForIpad1200(){
+	if(window.innerWidth>959){
+    		imgArticleHistory.style.top="1%";
+    		imgArticleHistory.style.opacity="1";
+    		titleArticleHistory.style.top="-23%";
+    		titleArticleHistory.style.opacity="1";
+    		contentArticleHistory.style.top="-26%";
+    		contentArticleHistory.style.opacity="1";
+	}
+	if(window.innerWidth<959){
+			imgArticleHistory.style.top="1%";
+    		imgArticleHistory.style.opacity="1";
+    		titleArticleHistory.style.top="-15%";
+    		titleArticleHistory.style.opacity="1";
+    		contentArticleHistory.style.top="-15%";
+    		contentArticleHistory.style.opacity="1";
+	}
 }
