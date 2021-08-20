@@ -1,9 +1,46 @@
 function initializeLogin(){
-	let blockSignUp=document.getElementById('blockLogin');
+	let blockLogin=document.getElementById('blockLogin');
 	setTimeout(function(){
-		blockSignUp.style.top="12%";
-		blockSignUp.style.opacity="1";
+		if(window.innerWidth>1049){
+			initializeForCpu(blockLogin);
+		}else{
+			if(window.innerWidth<768 && window.innerWidth>319){
+				initializeForMobile(blockLogin);
+			}else{
+				if(window.innerWidth>767 && window.innerWidth<1050){
+					initializeForIpad(blockLogin);
+				}
+			}
+		}
 	},200);
+}
+function initializeForMobile(blockLogin){
+	//Landscape
+	if(window.innerWidth>499){
+		blockLogin.style.top="0%";
+		blockLogin.style.opacity="1";
+	}
+	//Portrait
+	if(window.innerWidth<500){
+		blockLogin.style.top="12%";
+		blockLogin.style.opacity="1";
+	}
+}
+function initializeForCpu(blockLogin){
+	blockLogin.style.top="12%";
+	blockLogin.style.opacity="1";
+}
+function initializeForIpad(blockLogin){
+	// landscape
+	if(window.innerWidth>959){
+		blockLogin.style.top="12%";
+		blockLogin.style.opacity="1";
+	}
+	// portrait
+	if(window.innerWidth<959){
+		blockLogin.style.top="22%";
+		blockLogin.style.opacity="1";
+	}
 }
 
 function login(){

@@ -1,119 +1,590 @@
 @charset "ISO-8859-1";
-body{
-	transition:background 2s;
-	height:650px;
-	overflow-y:hidden;
-	background:linear-gradient(to bottom,#F8F8FF,#90EE90);
-	/*animation-name:animationBackground;
-	animation-duration:10s;
-	animation-direction: alternate;
-	animation-iteration-count:infinite;*/
+/*Breakpoints*/
+/*Cpu*/
+@media screen and (min-width:1050px){
+	body{
+		transition:background 2s;
+		height:650px;
+		overflow-y:hidden;
+		background:linear-gradient(to bottom,#F8F8FF,#90EE90);
+		/*animation-name:animationBackground;
+		animation-duration:10s;
+		animation-direction: alternate;
+		animation-iteration-count:infinite;*/
+	}
+	#blockLogin{
+		position:relative;
+		left:35%;
+		top:0%;
+		opacity:0;
+		transition:opacity 1s,top 1s;
+		height:70%;
+		box-shadow:0px 0px 3px black;
+		width:30%;
+		border:1px solid #FFFAFA;
+		border-radius:10%;
+		background:linear-gradient(to left bottom,#F8F8FF,#FFFAFA);
+	}
+	#logomarca{
+		position:relative;
+		left:3%;
+		width:150px;
+		height:150px;
+		display:inline-block;
+	}
+	#tituloBlock{
+		color:#2F4F4F;
+		font-size:25pt;
+		font-family:verdana;
+		font-weight:bold;
+		position:relative;
+		left:15%;
+		top:-15%;
+	}
+	.titleInput{
+		position:relative;
+		color:#1C1C1C;
+		text-shadow:0px 0px 1px black;
+		left:5%;
+		top:5%;
+		font-family:Agency FB;
+		font-size:18pt;
+	}
+	.input{
+		position:relative;
+		left:5%;
+		top:5%;
+		width:80%;
+		height:8%;
+		font-size:12pt;
+		background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+		border:2px solid #1C1C1C;
+		border-radius:5px;
+		padding-left:5%;
+		transition:border 0.5s;
+	}
+	.input:focus {
+	  outline:none;
+	  border-bottom:2px solid #00FF7F;
+	  border-left:2px solid #00FF7F;
+	  border-right:2px solid #00FF7F;
+	  border-top:2px solid #FFFAFA;
+	  border-radius:5px;
+	  background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+	}
+	#buttonSignUp{
+		position:relative;
+		width:30%;
+		height:50px;
+		display:inline-block;
+		left:10%;
+		top:10%;
+		border-radius:10px;
+	}
+	#textSignUp{
+		position:relative;
+		left:22%;
+		top:16%;
+		font-size:15pt;
+		font-family:arial;
+	}
+	#textSignUp:hover{
+		color:#D2691E;
+		text-decoration:underline;
+		cursor:pointer;
+	}
+	#buttonConfirm{
+		position:relative;
+		width:30%;
+		height:50px;
+		background:#FFFAFA;
+		display:inline-block;
+		left:25%;
+		top:10%;
+		border-radius:10px;
+	}
+	#buttonConfirm:hover{
+		background:#D2691E;
+		color:#FFFAFA;
+		cursor:pointer;
+	}
+	#textConfirm{
+		position:relative;
+		left:30%;
+		top:16%;
+		font-size:20pt;
+		font-family:agency fb;
+	}
+	@keyframes animationBackground{
+		0%{background:#7FFFD4;}
+		50%{background:#90EE90;}
+		100%{background:#FFDEAD;}
+	}
 }
-#blockLogin{
-	position:relative;
-	left:35%;
-	top:0%;
-	opacity:0;
-	transition:opacity 1s,top 1s;
-	height:70%;
-	box-shadow:0px 0px 3px black;
-	width:30%;
-	border:1px solid #FFFAFA;
-	border-radius:10%;
-	background:linear-gradient(to left bottom,#F8F8FF,#FFFAFA);
+/*Tablets*/
+@media screen and (min-width:768px) and (max-width:1049px) and (orientation:portrait){
+	body{
+		transition:background 2s;
+		height:950px;
+		overflow-y:hidden;
+		background:linear-gradient(to bottom,#F8F8FF,#90EE90);
+		/*animation-name:animationBackground;
+		animation-duration:10s;
+		animation-direction: alternate;
+		animation-iteration-count:infinite;*/
+	}
+	#blockLogin{
+		position:relative;
+		left:20%;
+		top:0%;
+		opacity:0;
+		transition:opacity 1s,top 1s;
+		height:50%;
+		box-shadow:0px 0px 3px black;
+		width:60%;
+		border:1px solid #FFFAFA;
+		border-radius:10%;
+		background:linear-gradient(to left bottom,#F8F8FF,#FFFAFA);
+	}
+	#logomarca{
+		position:relative;
+		left:3%;
+		width:150px;
+		height:150px;
+		display:inline-block;
+	}
+	#tituloBlock{
+		color:#2F4F4F;
+		font-size:25pt;
+		font-family:verdana;
+		font-weight:bold;
+		position:relative;
+		left:15%;
+		top:-15%;
+	}
+	.titleInput{
+		position:relative;
+		color:#1C1C1C;
+		text-shadow:0px 0px 1px black;
+		left:5%;
+		top:5%;
+		font-family:Agency FB;
+		font-size:18pt;
+	}
+	.input{
+		position:relative;
+		left:5%;
+		top:5%;
+		width:80%;
+		height:8%;
+		font-size:12pt;
+		background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+		border:2px solid #1C1C1C;
+		border-radius:5px;
+		padding-left:5%;
+		transition:border 0.5s;
+	}
+	.input:focus {
+	  outline:none;
+	  border-bottom:2px solid #00FF7F;
+	  border-left:2px solid #00FF7F;
+	  border-right:2px solid #00FF7F;
+	  border-top:2px solid #FFFAFA;
+	  border-radius:5px;
+	  background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+	}
+	#buttonSignUp{
+		position:relative;
+		width:30%;
+		height:50px;
+		display:inline-block;
+		left:10%;
+		top:10%;
+		border-radius:10px;
+	}
+	#textSignUp{
+		position:relative;
+		left:22%;
+		top:16%;
+		font-size:15pt;
+		font-family:arial;
+	}
+	#textSignUp:hover{
+		color:#D2691E;
+		text-decoration:underline;
+		cursor:pointer;
+	}
+	#buttonConfirm{
+		position:relative;
+		width:30%;
+		height:50px;
+		background:#FFFAFA;
+		display:inline-block;
+		left:25%;
+		top:10%;
+		border-radius:10px;
+	}
+	#buttonConfirm:hover{
+		background:#D2691E;
+		color:#FFFAFA;
+		cursor:pointer;
+	}
+	#textConfirm{
+		position:relative;
+		left:30%;
+		top:16%;
+		font-size:20pt;
+		font-family:agency fb;
+	}
+	
 }
-#logomarca{
-	position:relative;
-	left:3%;
-	width:150px;
-	height:150px;
-	display:inline-block;
+@media screen and (min-width:768px) and (max-width:1049px) and (orientation:landscape){
+	body{
+		transition:background 2s;
+		height:650px;
+		overflow-y:hidden;
+		background:linear-gradient(to bottom,#F8F8FF,#90EE90);
+		/*animation-name:animationBackground;
+		animation-duration:10s;
+		animation-direction: alternate;
+		animation-iteration-count:infinite;*/
+	}
+	#blockLogin{
+		position:relative;
+		left:30%;
+		top:0%;
+		opacity:0;
+		transition:opacity 1s,top 1s;
+		height:70%;
+		box-shadow:0px 0px 3px black;
+		width:40%;
+		border:1px solid #FFFAFA;
+		border-radius:10%;
+		background:linear-gradient(to left bottom,#F8F8FF,#FFFAFA);
+	}
+	#logomarca{
+		position:relative;
+		left:3%;
+		width:150px;
+		height:150px;
+		display:inline-block;
+	}
+	#tituloBlock{
+		color:#2F4F4F;
+		font-size:25pt;
+		font-family:verdana;
+		font-weight:bold;
+		position:relative;
+		left:15%;
+		top:-15%;
+	}
+	.titleInput{
+		position:relative;
+		color:#1C1C1C;
+		text-shadow:0px 0px 1px black;
+		left:5%;
+		top:5%;
+		font-family:Agency FB;
+		font-size:18pt;
+	}
+	.input{
+		position:relative;
+		left:5%;
+		top:5%;
+		width:80%;
+		height:8%;
+		font-size:12pt;
+		background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+		border:2px solid #1C1C1C;
+		border-radius:5px;
+		padding-left:5%;
+		transition:border 0.5s;
+	}
+	.input:focus {
+	  outline:none;
+	  border-bottom:2px solid #00FF7F;
+	  border-left:2px solid #00FF7F;
+	  border-right:2px solid #00FF7F;
+	  border-top:2px solid #FFFAFA;
+	  border-radius:5px;
+	  background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+	}
+	#buttonSignUp{
+		position:relative;
+		width:30%;
+		height:50px;
+		display:inline-block;
+		left:10%;
+		top:10%;
+		border-radius:10px;
+	}
+	#textSignUp{
+		position:relative;
+		left:22%;
+		top:16%;
+		font-size:15pt;
+		font-family:arial;
+	}
+	#textSignUp:hover{
+		color:#D2691E;
+		text-decoration:underline;
+		cursor:pointer;
+	}
+	#buttonConfirm{
+		position:relative;
+		width:30%;
+		height:50px;
+		background:#FFFAFA;
+		display:inline-block;
+		left:25%;
+		top:10%;
+		border-radius:10px;
+	}
+	#buttonConfirm:hover{
+		background:#D2691E;
+		color:#FFFAFA;
+		cursor:pointer;
+	}
+	#textConfirm{
+		position:relative;
+		left:30%;
+		top:16%;
+		font-size:20pt;
+		font-family:agency fb;
+	}
+	
 }
-#tituloBlock{
-	color:#2F4F4F;
-	font-size:25pt;
-	font-family:verdana;
-	font-weight:bold;
-	position:relative;
-	left:15%;
-	top:-15%;
+/*Celulares*/
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape){
+	body{
+		transition:background 2s;
+		height:650px;
+		overflow-y:hidden;
+		background:linear-gradient(to bottom,#F8F8FF,#90EE90);
+		/*animation-name:animationBackground;
+		animation-duration:10s;
+		animation-direction: alternate;
+		animation-iteration-count:infinite;*/
+	}
+	#blockLogin{
+		position:relative;
+		left:2%;
+		top:-20%;
+		opacity:0;
+		transition:opacity 1s,top 1s;
+		height:50%;
+		box-shadow:0px 0px 3px black;
+		width:95%;
+		border:1px solid #FFFAFA;
+		border-radius:20px;
+		background:linear-gradient(to left bottom,#F8F8FF,#FFFAFA);
+	}
+	#logomarca{
+		position:relative;
+		left:3%;
+		width:100px;
+		height:100px;
+		display:inline-block;
+	}
+	#tituloBlock{
+		color:#2F4F4F;
+		font-size:25pt;
+		font-family:verdana;
+		font-weight:bold;
+		position:relative;
+		left:15%;
+		top:-10%;
+	}
+	.titleInput{
+		position:relative;
+		color:#1C1C1C;
+		text-shadow:0px 0px 1px black;
+		left:5%;
+		top:5%;
+		font-family:Agency FB;
+		font-size:18pt;
+	}
+	.input{
+		position:relative;
+		left:5%;
+		top:5%;
+		width:80%;
+		height:8%;
+		font-size:12pt;
+		background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+		border:2px solid #1C1C1C;
+		border-radius:5px;
+		padding-left:5%;
+		transition:border 0.5s;
+	}
+	.input:focus {
+	  outline:none;
+	  border-bottom:2px solid #00FF7F;
+	  border-left:2px solid #00FF7F;
+	  border-right:2px solid #00FF7F;
+	  border-top:2px solid #FFFAFA;
+	  border-radius:5px;
+	  background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+	}
+	#buttonSignUp{
+		position:relative;
+		width:30%;
+		height:50px;
+		display:inline-block;
+		left:60%;
+		top:-50%;
+		border-radius:10px;
+	}
+	#textSignUp{
+		position:relative;
+		left:22%;
+		top:16%;
+		font-size:15pt;
+		font-family:arial;
+	}
+	#textSignUp:hover{
+		color:#D2691E;
+		text-decoration:underline;
+		cursor:pointer;
+	}
+	#buttonConfirm{
+		position:relative;
+		width:15%;
+		height:50px;
+		background:#FFFAFA;
+		display:inline-block;
+		left:50%;
+		top:-50%;
+		border-radius:10px;
+	}
+	#buttonConfirm:hover{
+		background:#D2691E;
+		color:#FFFAFA;
+		cursor:pointer;
+	}
+	#textConfirm{
+		position:relative;
+		left:30%;
+		top:16%;
+		font-size:20pt;
+		font-family:agency fb;
+	}
+	
 }
-.titleInput{
-	position:relative;
-	color:#1C1C1C;
-	text-shadow:0px 0px 1px black;
-	left:5%;
-	top:5%;
-	font-family:Agency FB;
-	font-size:18pt;
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:portrait){
+	body{
+		transition:background 2s;
+		height:650px;
+		overflow-y:hidden;
+		background:linear-gradient(to bottom,#F8F8FF,#90EE90);
+		/*animation-name:animationBackground;
+		animation-duration:10s;
+		animation-direction: alternate;
+		animation-iteration-count:infinite;*/
+	}
+	#blockLogin{
+		position:relative;
+		left:2%;
+		top:0%;
+		opacity:0;
+		transition:opacity 1s,top 1s;
+		height:70%;
+		box-shadow:0px 0px 3px black;
+		width:95%;
+		border:1px solid #FFFAFA;
+		border-radius:10%;
+		background:linear-gradient(to left bottom,#F8F8FF,#FFFAFA);
+	}
+	#logomarca{
+		position:relative;
+		left:3%;
+		width:150px;
+		height:150px;
+		display:inline-block;
+	}
+	#tituloBlock{
+		color:#2F4F4F;
+		font-size:25pt;
+		font-family:verdana;
+		font-weight:bold;
+		position:relative;
+		left:15%;
+		top:-15%;
+	}
+	.titleInput{
+		position:relative;
+		color:#1C1C1C;
+		text-shadow:0px 0px 1px black;
+		left:5%;
+		top:5%;
+		font-family:Agency FB;
+		font-size:18pt;
+	}
+	.input{
+		position:relative;
+		left:5%;
+		top:5%;
+		width:80%;
+		height:8%;
+		font-size:12pt;
+		background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+		border:2px solid #1C1C1C;
+		border-radius:5px;
+		padding-left:5%;
+		transition:border 0.5s;
+	}
+	.input:focus {
+	  outline:none;
+	  border-bottom:2px solid #00FF7F;
+	  border-left:2px solid #00FF7F;
+	  border-right:2px solid #00FF7F;
+	  border-top:2px solid #FFFAFA;
+	  border-radius:5px;
+	  background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
+	}
+	#buttonSignUp{
+		position:relative;
+		width:30%;
+		height:50px;
+		display:inline-block;
+		left:10%;
+		top:10%;
+		border-radius:10px;
+	}
+	#textSignUp{
+		position:relative;
+		left:22%;
+		top:16%;
+		font-size:15pt;
+		font-family:arial;
+	}
+	#textSignUp:hover{
+		color:#D2691E;
+		text-decoration:underline;
+		cursor:pointer;
+	}
+	#buttonConfirm{
+		position:relative;
+		width:30%;
+		height:50px;
+		background:#FFFAFA;
+		display:inline-block;
+		left:25%;
+		top:10%;
+		border-radius:10px;
+	}
+	#buttonConfirm:hover{
+		background:#D2691E;
+		color:#FFFAFA;
+		cursor:pointer;
+	}
+	#textConfirm{
+		position:relative;
+		left:30%;
+		top:16%;
+		font-size:20pt;
+		font-family:agency fb;
+	}
+	
 }
-.input{
-	position:relative;
-	left:5%;
-	top:5%;
-	width:80%;
-	height:8%;
-	font-size:12pt;
-	background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
-	border:2px solid #1C1C1C;
-	border-radius:5px;
-	padding-left:5%;
-	transition:border 0.5s;
-}
-.input:focus {
-  outline:none;
-  border-bottom:2px solid #00FF7F;
-  border-left:2px solid #00FF7F;
-  border-right:2px solid #00FF7F;
-  border-top:2px solid #FFFAFA;
-  border-radius:5px;
-  background:linear-gradient(to left bottom,#F8F8FF,#F5FFFA);
-}
-#buttonSignUp{
-	position:relative;
-	width:30%;
-	height:50px;
-	display:inline-block;
-	left:10%;
-	top:10%;
-	border-radius:10px;
-}
-#textSignUp{
-	position:relative;
-	left:22%;
-	top:16%;
-	font-size:15pt;
-	font-family:arial;
-}
-#textSignUp:hover{
-	color:#D2691E;
-	text-decoration:underline;
-	cursor:pointer;
-}
-#buttonConfirm{
-	position:relative;
-	width:30%;
-	height:50px;
-	background:#FFFAFA;
-	display:inline-block;
-	left:25%;
-	top:10%;
-	border-radius:10px;
-}
-#buttonConfirm:hover{
-	background:#D2691E;
-	color:#FFFAFA;
-	cursor:pointer;
-}
-#textConfirm{
-	position:relative;
-	left:30%;
-	top:16%;
-	font-size:20pt;
-	font-family:agency fb;
-}
-@keyframes animationBackground{
-	0%{background:#7FFFD4;}
-	50%{background:#90EE90;}
-	100%{background:#FFDEAD;}
-}
+/*@media screen and (min-width:400px) and (max-width:420px) and (orientation:portrait){}*/
