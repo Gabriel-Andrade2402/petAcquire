@@ -1277,11 +1277,10 @@ body{
 	}
 	
 	  /*History*/
-	
+	/*Precisa de alterações para servir em todos designs*/
 	#articleHistory{
 		height:500px;
 	}
-	  
 	#imgArticleHistory{
 		position:relative;
 		top:-15%;
