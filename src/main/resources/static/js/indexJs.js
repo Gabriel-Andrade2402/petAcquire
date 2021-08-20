@@ -15,16 +15,22 @@ function indexInitialize() {
     }
 }
 function initializeForMobile(logo,menuNavigation,dog){
-	if(window.innerWidth>415){
-		logo.style.left="-20%";
+	//Condicional para landscape e portrait
+	if(window.innerWidth>499){
+		logo.style.left="20%";
 		menuNavigation.style.left="0%";
-		dog.style.left="70%";
+		dog.style.left="78%";
 		logo.style.opacity="1";
 		menuNavigation.style.opacity="1";
 		dog.style.opacity="1";
 	}
-	if(window.innerWidth<416){
-		logo.style.left="15%";
+	if(window.innerWidth<500){
+		//Condicional para telas maiores que 375px
+		if(window.innerWidth>375){
+			logo.style.left="-8%";
+		}else{
+			logo.style.left="15%";
+		}
 		menuNavigation.style.left="0%";
 		dog.style.left="70%";
 		logo.style.opacity="1";
