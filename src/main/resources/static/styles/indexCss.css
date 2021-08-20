@@ -828,31 +828,34 @@ body{
 	  /*History*/
 	
 	#articleHistory{
-		height:550px;
+		height:570px;
 	}
 	  
 	#imgArticleHistory{
+		display:block;
 		position:relative;
 		top:-8%;
 		opacity:0.5;
 		transition:top 1.5s,opacity 1s;
-		left:17%;
+		left:12%;
 		width:500px;
 		height:500px;
 	}
 	#titleArticleHistory{
+		display:block;
 		font-size:38pt;
 		color:#D2691E;
 		position:relative;
-		left:-30%;
+		left:35%;
 		top:-40%;
 		opacity:0.5;
 		transition:top 1.5s,opacity 1s;
 	}
 	#contentArticleHistory{
+		display:block;
 		position:relative;
 		font-size:25pt;
-		width:70%;
+		width:100%;
 		font-family:Times, Times New Roman, serif;
 		color:#2F4F4F;
 		top:-40%;

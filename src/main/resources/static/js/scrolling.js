@@ -48,9 +48,9 @@ function scrollForMobile1200(){
 	if(window.innerWidth>415){
     		imgArticleHistory.style.top="1%";
     		imgArticleHistory.style.opacity="1";
-    		titleArticleHistory.style.top="-15%";
+    		titleArticleHistory.style.top="-25%";
     		titleArticleHistory.style.opacity="1";
-    		contentArticleHistory.style.top="-15%";
+    		contentArticleHistory.style.top="-25%";
     		contentArticleHistory.style.opacity="1";
 	}
 	if(window.innerWidth<416){
