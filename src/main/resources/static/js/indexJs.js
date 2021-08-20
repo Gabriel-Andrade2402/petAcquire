@@ -1,20 +1,45 @@
 function indexInitialize() {
-    let logo=document.getElementById("logo");
+	let logo=document.getElementById("logo");
     let menuNavigation=document.getElementById("menuNavigation");
     let dog=document.getElementById("dogBackgroundTop");
     setTimeout(function(){
-    	logo.style.left="15%";
-    	menuNavigation.style.left="23%";
-    	dog.style.left="81%";
-    	logo.style.opacity="1";
-    	menuNavigation.style.opacity="1";
-    	dog.style.opacity="1";
+    	if(window.innerWidth>1049){
+    		initializeForCpu(logo,menuNavigation,dog);
+    	}
+    	if(window.innerWidth<768 && window.innerWidth>319){
+    		initializeForMobile(logo,menuNavigation,dog);
+    	}
     },100);
     if(window.sessionStorage.getItem('userName')!=null){
     	userInitialize()
     }
 }
-
+function initializeForMobile(logo,menuNavigation,dog){
+	if(window.innerWidth>415){
+		logo.style.left="-20%";
+		menuNavigation.style.left="0%";
+		dog.style.left="70%";
+		logo.style.opacity="1";
+		menuNavigation.style.opacity="1";
+		dog.style.opacity="1";
+	}
+	if(window.innerWidth<416){
+		logo.style.left="15%";
+		menuNavigation.style.left="0%";
+		dog.style.left="70%";
+		logo.style.opacity="1";
+		menuNavigation.style.opacity="1";
+		dog.style.opacity="1";
+	}
+}
+function initializeForCpu(logo,menuNavigation,dog){
+	logo.style.left="15%";
+	menuNavigation.style.left="23%";
+	dog.style.left="81%";
+	logo.style.opacity="1";
+	menuNavigation.style.opacity="1";
+	dog.style.opacity="1";
+}
 function userInitialize(){
 	let menu=document.getElementById('menuLogin');
 	let buttonLogin=document.getElementById('buttonlogin');
