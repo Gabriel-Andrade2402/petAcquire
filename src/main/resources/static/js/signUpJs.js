@@ -47,5 +47,5 @@ function registerFunction(){
 			window.sessionStorage.setItem('userName',dataUser['name']);
 			redirect('http://localhost:8080/');
 		}
-	},200);	
+	},1000);	
 }
